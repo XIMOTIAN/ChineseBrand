@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/offset_26dp"
+        android:layout_marginRight="@dimen/offset_26dp"
+        android:layout_marginTop="@dimen/offset_51dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/nickname_et"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="请输入修改昵称"
+            android:lines="1"
+            android:maxLength="200"
+            android:maxLines="8"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/font_size_13sp" />
+
+        <ImageView
+            android:id="@+id/clear_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clear_content" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/offset_26dp"
+        android:layout_marginRight="@dimen/offset_26dp"
+        android:layout_marginTop="@dimen/offset_5dp"
+        android:background="@color/color_F4F4F4" />
+
+    <TextView
+        android:id="@+id/sure_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/offset_35dp"
+        android:background="@color/color_F4F4F4"
+        android:gravity="center"
+        android:paddingBottom="@dimen/offset_15dp"
+        android:paddingLeft="@dimen/offset_10dp"
+        android:paddingRight="@dimen/offset_10dp"
+        android:paddingTop="@dimen/offset_15dp"
+        android:text="确定"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/font_size_14sp" />
+</LinearLayout>

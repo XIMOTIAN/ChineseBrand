@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/banner_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.darren.chinesebrand.app.ui.loopview.LoopView
+            android:id="@+id/loop_year"
+            android:layout_width="0dp"
+            android:layout_height="212dp"
+            android:layout_weight="1"
+            app:awv_centerTextColor="@color/color_E84040"
+            app:awv_itemsVisibleCount="7"
+            app:awv_lineSpace="3"
+            app:awv_textSize="16" />
+
+        <com.darren.chinesebrand.app.ui.loopview.LoopView
+            android:id="@+id/loop_month"
+            android:layout_width="0dp"
+            android:layout_height="212dp"
+            android:layout_weight="1"
+            app:awv_centerTextColor="@color/color_E84040"
+            app:awv_itemsVisibleCount="7"
+            app:awv_lineSpace="3"
+            app:awv_textSize="16" />
+
+        <com.darren.chinesebrand.app.ui.loopview.LoopView
+            android:id="@+id/loop_day"
+            android:layout_width="0dp"
+            android:layout_height="212dp"
+            android:layout_weight="1"
+            app:awv_centerTextColor="@color/color_E84040"
+            app:awv_itemsVisibleCount="7"
+            app:awv_lineSpace="3"
+            app:awv_textSize="16" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/sure_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:background="@color/color_F4F4F4"
+        android:gravity="center"
+        android:paddingBottom="@dimen/offset_15dp"
+        android:paddingLeft="@dimen/offset_10dp"
+        android:paddingRight="@dimen/offset_10dp"
+        android:paddingTop="@dimen/offset_15dp"
+        android:text="确定"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/font_size_14sp" />
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/offset_20dp"
+    android:paddingRight="@dimen/offset_20dp"
+    android:paddingTop="@dimen/offset_40dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/delete_activity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="@dimen/offset_20dp"
+            android:paddingLeft="@dimen/offset_20dp"
+            android:src="@drawable/delete_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/offset_30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/user_name_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:inputType="numberDecimal"
+                android:maxLength="11"
+                android:paddingBottom="@dimen/offset_5dp"
+                android:paddingTop="@dimen/offset_5dp"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <ImageView
+                android:id="@+id/clear_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:paddingLeft="@dimen/offset_10dp"
+                android:scaleType="fitEnd"
+                android:src="@drawable/clear_content"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_1dp"
+            android:layout_marginBottom="@dimen/offset_14dp"
+            android:layout_marginTop="@dimen/offset_14dp"
+            android:background="@color/color_F4F4F4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/user_code_et"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入验证码"
+                android:inputType="numberDecimal"
+                android:maxLength="6"
+                android:paddingBottom="@dimen/offset_5dp"
+                android:paddingTop="@dimen/offset_5dp"
+                android:textColor="@color/color_333333"
+                android:textColorHint="@color/color_999999"
+                android:textSize="@dimen/font_size_18sp" />
+
+            <com.darren.chinesebrand.app.ui.VerificationCodeButton
+                android:id="@+id/send_code"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom"
+                android:background="@drawable/color_f4f4f4_corner"
+                android:gravity="center"
+                android:paddingLeft="@dimen/offset_8dp"
+                android:paddingRight="@dimen/offset_8dp"
+                android:src="@drawable/clear_content"
+                android:text="发送验证码"
+                android:textColor="@color/color_666666"
+                android:textSize="@dimen/font_size_15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/offset_1dp"
+            android:layout_marginBottom="@dimen/offset_14dp"
+            android:layout_marginTop="@dimen/offset_14dp"
+            android:background="@color/color_F4F4F4" />
+
+        <EditText
+            android:id="@+id/user_pwd_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="设置登录密码"
+            android:inputType="textPassword"
+            android:maxLength="20"
+            android:paddingBottom="@dimen/offset_5dp"
+            android:paddingTop="@dimen/offset_5dp"
+            android:textColor="@color/color_333333"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/font_size_18sp" />
+
+        <Button
+            android:id="@+id/user_register_bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/offset_50dp"
+            android:background="@drawable/user_login_bg"
+            android:text="注册"
+            android:textColor="@color/color_FFFFFF"
+            android:textSize="@dimen/font_size_21sp" />
+
+        <LinearLayout
+            android:id="@+id/goto_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="@dimen/offset_16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="已有账号  "
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/font_size_12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" 直接登录  "
+                android:textColor="@color/color_2C67D4"
+                android:textSize="@dimen/font_size_12sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=">>"
+                android:textColor="@color/color_999999"
+                android:textSize="@dimen/font_size_12sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+

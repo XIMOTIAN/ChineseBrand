@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_1dp"
+        android:background="@color/color_F4F4F4" />
+
+    <TextView
+        android:id="@+id/clear_cache"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/menu_list_arrows"
+        android:padding="@dimen/offset_16dp"
+        android:textColor="@color/color_333333"
+        android:text="清理缓存"
+        android:textSize="@dimen/font_size_14sp" />
+
+    <TextView
+        android:id="@+id/about_us"
+        android:textColor="@color/color_333333"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableRight="@drawable/menu_list_arrows"
+        android:padding="@dimen/offset_16dp"
+        android:text="关于我们"
+        android:textSize="@dimen/font_size_14sp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/user_exit_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/offset_50dp"
+        android:layout_marginLeft="@dimen/offset_16dp"
+        android:layout_marginRight="@dimen/offset_16dp"
+        android:layout_marginTop="@dimen/offset_50dp"
+        android:background="@drawable/user_login_bg"
+        android:text="退出登录"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/font_size_21sp" />
+</LinearLayout>
+

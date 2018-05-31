@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.darren.chinesebrand">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:name=".app.BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+        <activity
+            android:name=".app.activity.WelcomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/App.Theme.Launch">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- 主页面 -->
+        <activity
+            android:name=".app.activity.HomeActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <!-- 登录页面 -->
+        <activity
+            android:name=".app.activity.user.UserLoginActivity"
+            android:screenOrientation="portrait" />
+        <!-- 注册页面 -->
+        <activity
+            android:name=".app.activity.user.UserRegisterActivity"
+            android:screenOrientation="portrait" />
+        <!-- 用户忘记密码 -->
+        <activity
+            android:name=".app.activity.user.UserForgetPwdActivity"
+            android:screenOrientation="portrait" />
+        <!-- 品牌详情页 -->
+        <activity
+            android:name=".app.activity.BrandDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--用户消息-->
+        <activity
+            android:name=".app.activity.user.UserMessageActivity"
+            android:screenOrientation="portrait" />
+        <!--用户评论-->
+        <activity
+            android:name=".app.activity.user.UserCommentActivity"
+            android:screenOrientation="portrait" />
+        <!--用户收藏-->
+        <activity
+            android:name=".app.activity.user.UserCollectActivity"
+            android:screenOrientation="portrait" />
+        <!--用户历史记录-->
+        <activity
+            android:name=".app.activity.user.UserHistoryActivity"
+            android:screenOrientation="portrait" />
+        <!--用户反馈-->
+        <activity
+            android:name=".app.activity.user.UserSuggestActivity"
+            android:screenOrientation="portrait" />
+        <!--用户设置-->
+        <activity
+            android:name=".app.activity.UserSettingActivity"
+            android:screenOrientation="portrait" />
+        <!--用户编辑信息页面-->
+        <activity
+            android:name=".app.activity.UserEditInfoActivity"
+            android:screenOrientation="portrait" />
+        <!--评论列表页面-->
+        <activity
+            android:name=".app.activity.BrandCommentListActivity"
+            android:screenOrientation="portrait" />
+        <!--评论详情页面-->
+        <activity
+            android:name=".app.activity.CommentDetailActivity"
+            android:screenOrientation="portrait" />
+        <!--用户协议页面-->
+        <activity
+            android:name=".app.activity.UserProtocolActivity"
+            android:screenOrientation="portrait" />
+        <!--关于我们页面-->
+        <activity
+            android:name=".app.activity.AboutUsActivity"
+            android:screenOrientation="portrait" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.darren.chinesebrand.provider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_FFFFFF"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/offset_27dp"
+    tools:openDrawer="start">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/offset_3dp"
+        android:paddingTop="@dimen/offset_3dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/offset_16dp"
+            android:src="@drawable/comment_back" />
+
+        <TextView
+            android:id="@+id/title_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:paddingBottom="11dp"
+            android:paddingTop="20dp"
+            android:text="Title"
+            android:textSize="@dimen/font_size_21sp" />
+
+        <ImageView
+            android:id="@+id/share_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:padding="@dimen/offset_16dp"
+            android:src="@drawable/detail_share" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_F4F4F4" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+        <!--<com.darren.chinesebrand.base.ui.WrapRecyclerView
+            android:id="@+id/comment_rv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>-->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/offset_16dp"
+            android:layout_marginRight="@dimen/offset_16dp"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_brand_detail_header" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/comment_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/comment_more_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="@dimen/offset_85dp"
+                    android:layout_marginTop="@dimen/offset_20dp"
+                    android:background="@drawable/color_f4f5f6_corner"
+                    android:paddingBottom="@dimen/offset_5dp"
+                    android:paddingLeft="@dimen/offset_10dp"
+                    android:paddingRight="@dimen/offset_10dp"
+                    android:paddingTop="@dimen/offset_5dp"
+                    android:text="查看更多评论 > "
+                    android:textColor="@color/color_E84040" />
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/color_FFFFFF"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/offset_1dp"
+                android:background="@color/color_F4F4F4" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/offset_10dp"
+                android:paddingTop="@dimen/offset_10dp">
+
+                <TextView
+                    android:id="@+id/write_comment"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/offset_16dp"
+                    android:layout_marginRight="@dimen/offset_16dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/color_f4f5f6_semicircle"
+                    android:drawableLeft="@drawable/write_comment"
+                    android:drawablePadding="@dimen/offset_8dp"
+                    android:padding="@dimen/offset_12dp"
+                    android:text="写评论..." />
+
+                <ImageView
+                    android:id="@+id/comment_list_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="8dp"
+                    android:padding="8dp"
+                    android:src="@drawable/comment_icon" />
+
+                <CheckBox
+                    android:id="@+id/collect_cb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/offset_8dp"
+                    android:background="@null"
+                    android:button="@drawable/collect_brand_cb_selector"
+                    android:paddingBottom="@dimen/offset_8dp"
+                    android:paddingRight="@dimen/offset_16dp"
+                    android:paddingTop="@dimen/offset_8dp" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
+

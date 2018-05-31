@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ChineseBrand.iml" filepath="$PROJECT_DIR$/ChineseBrand.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageselectorlib/imageselectorlib.iml" filepath="$PROJECT_DIR$/imageselectorlib/imageselectorlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sharecomponent/sharecomponent.iml" filepath="$PROJECT_DIR$/sharecomponent/sharecomponent.iml" />
+    </modules>
+  </component>
+</project>

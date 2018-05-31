@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/banner_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/color_F4F5F6"
+    android:orientation="vertical"
+    android:padding="@dimen/offset_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/offset_1dp">
+
+        <EditText
+            android:id="@+id/comment_content_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/comment_edit_corner"
+            android:gravity="top"
+            android:hint="优质评论将会被优先展示"
+            android:lines="4"
+            android:padding="@dimen/offset_10dp"
+            android:textColor="@color/color_333333"
+            android:maxLength="200"
+            android:textColorHint="@color/color_999999"
+            android:textSize="@dimen/font_size_12sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/submit_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/offset_16dp"
+        android:background="@drawable/color_cacaca_corner"
+        android:paddingBottom="@dimen/offset_5dp"
+        android:paddingLeft="@dimen/offset_10dp"
+        android:paddingRight="@dimen/offset_10dp"
+        android:paddingTop="@dimen/offset_5dp"
+        android:text="发 表"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/font_size_12sp" />
+</LinearLayout>

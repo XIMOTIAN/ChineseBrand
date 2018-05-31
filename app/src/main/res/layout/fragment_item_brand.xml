@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.darren.chinesebrand.app.ui.SwipeRefreshRecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/wrap_rv"
+    android:background="@color/color_FFFFFF"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"/>
+

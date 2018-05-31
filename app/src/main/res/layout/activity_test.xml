@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.darren.chinesebrand.MyViewGroup xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_2C67D4"
+    android:orientation="vertical"
+    tools:openDrawer="start">
+
+    <com.darren.chinesebrand.MyTextView
+        android:id="@+id/child"
+        android:layout_width="@dimen/offset_100dp"
+        android:layout_height="@dimen/offset_100dp"
+        android:background="@color/color_F4F4F4" />
+
+</com.darren.chinesebrand.MyViewGroup>
+

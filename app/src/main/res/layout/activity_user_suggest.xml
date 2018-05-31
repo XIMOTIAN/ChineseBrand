@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/offset_1dp"
+        android:background="@color/color_F4F4F4" />
+
+    <EditText
+        android:id="@+id/suggest_content_et"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:hint="可输入300字......"
+        android:textColor="@color/color_999999"
+        android:gravity="top"
+        android:maxLength="300"
+        android:background="@null"
+        android:textSize="@dimen/font_size_17sp"
+        android:layout_height="300dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="0dp"/>
+
+    <Button
+        android:id="@+id/submit_bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/offset_50dp"
+        android:background="@drawable/user_login_bg"
+        android:text="提 交"
+        android:layout_marginLeft="@dimen/offset_16dp"
+        android:layout_marginRight="@dimen/offset_16dp"
+        android:layout_marginBottom="@dimen/offset_50dp"
+        android:textColor="@color/color_FFFFFF"
+        android:textSize="@dimen/font_size_21sp" />
+
+</LinearLayout>
+
